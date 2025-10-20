@@ -18,7 +18,7 @@ export default function About() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Our Mission</h2>
             <p className="text-lg text-gray-700 mb-12 font-body">
-              The Student Union Government of Bayero University Kano (SUGBUK) exists to represent, protect, and advance the interests of all students at BUK. We strive to create a campus environment where every student's voice is heard, rights are protected, and university experience is enriched through advocacy, activities, and services.
+              The Student Union Government of Bayero University Kano (SUGBUK) exists to represent, protect, and advance the interests of all students at BUK. We strive to create a campus environment where every student&apos;s voice is heard, rights are protected, and university experience is enriched through advocacy, activities, and services.
             </p>
             
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Our Values</h2>
