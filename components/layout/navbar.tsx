@@ -3,19 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import NavLink from "./nav-link";
 import { WhatsappChannel } from "../WhatsappCTA";
-
-
-const unauthenticatedLinks = [
-  { href: "/sign-in", label: "Sign In" },
-  { href: "/about", label: "About Us" },
-  { href: "/talk-to-rep", label: "Share a Concern" },
-  // { href: "/sign-up", label: "Sign Up" }, // Commented out because I don't know if we should use this
-];
-
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,13 +30,6 @@ export default function Navbar() {
   }, [navRef]);
 
 
-  const pathname = usePathname();
-
-
-
-  const closeMenu = () => setIsOpen(false);
-
-  const Navlinks = unauthenticatedLinks;
 
   return (
     <nav className="bg-white text-[#333333] shadow-md sticky top-0 z-40 backdrop-blur-sm">
@@ -80,7 +62,7 @@ export default function Navbar() {
             </div> */}
 
 
-          <div className="flex items-center bg-primary">
+          <div className="hidden sm:flex items-center bg-primary">
             <WhatsappChannel />
           </div>
            
@@ -152,19 +134,7 @@ export default function Navbar() {
             ref={navRef}
             className="absolute top-20 bg-white right-2 px-8 py-6 rounded-lg shadow-lg sm:hidden overflow-hidden"
           >
-            <div className="grid place-content-center px-2 pt-2 pb-3 space-y-1">
-              {Navlinks.map((link) => (
-                <NavLink
-                  key={`mobile-${link.href}`}
-                  href={link.href}
-                  label={link.label}
-                  isActive={pathname === link.href}
-                  isMobile={true}
-                  onClick={closeMenu}
-                />
-              ))}
-              
-            </div>
+            <WhatsappChannel />
           </motion.div>
         )}
       </AnimatePresence>
