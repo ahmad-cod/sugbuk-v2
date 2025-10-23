@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './ui/btn'
+import { sugMail } from '@/lib/constants'
 
 export default function CTA() {
   return (
@@ -12,7 +13,7 @@ export default function CTA() {
           We&apos;re committed to making your university experience better.
           Share your thoughts with your student representatives.
         </p>
-        <Button href='talk-to-rep' variant="secondary" size="lg">
+        <Button href={sugMail} variant="secondary" size="lg">
           Talk to Your Rep
         </Button>
     </div>
