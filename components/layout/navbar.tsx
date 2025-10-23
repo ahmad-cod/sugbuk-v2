@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import NavLink from "./nav-link";
+import { WhatsappChannel } from "../WhatsappCTA";
 
 
 const unauthenticatedLinks = [
@@ -67,7 +68,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden sm:flex sm:space-x-4">
+            {/* <div className="hidden sm:flex sm:space-x-4">
               {Navlinks.map((link) => (
                 <NavLink
                   key={link.href}
@@ -76,7 +77,12 @@ export default function Navbar() {
                   isActive={pathname === link.href}
                 />
               ))}
-            </div>
+            </div> */}
+
+
+          <div className="flex items-center bg-primary">
+            <WhatsappChannel />
+          </div>
            
           </div>
 
@@ -129,7 +135,9 @@ export default function Navbar() {
               )}
             </button>
           </div>
+
         </div>
+
       </div>
 
       {/* Mobile menu */}
