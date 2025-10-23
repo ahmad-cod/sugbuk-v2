@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
 
       <div className="relative container mx-auto px-4 py-12">
         {/* Main footer content */}
-        <div className="flex flex-col items-center space-y-8">
+        <div className="flex flex-col items-center space-y-10">
           
           {/* Brand section */}
           <div className="text-center space-y-3">
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Quick links */}
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
+          {/* <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
             <Link 
               href="/about" 
               className="text-slate-400 hover:text-sky-400 transition-colors duration-300 hover:underline underline-offset-4"
@@ -123,7 +123,7 @@ const Footer: React.FC = () => {
             >
               Updates
             </Link>
-          </div>
+          </div> */}
 
           {/* Divider */}
           <div className="w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
