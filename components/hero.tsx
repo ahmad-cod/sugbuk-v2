@@ -46,18 +46,18 @@ const Hero: React.FC = () => {
                   </p>
                   <WhatsappChannel />
                   {/* Stats */}
-                  <div className="grid grid-cols-3 gap-4 mt-20 max-w-2xl mx-auto">
-                    <div className="bg-blue-800/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                  <div className="flex items-center justify-around gap-4 mt-20 max-w-2xl mx-auto">
+                    <div className="bg-blue-800/10 backdrop-blur-sm rounded-2xl p-6 px-8 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                       <Users className="w-8 h-8 text-white mx-auto mb-2" />
                       <div className="text-3xl font-bold text-white mb-1">10K+</div>
                       <div className="text-sm text-blue-100">Students</div>
                     </div>
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 px-10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                       <Calendar className="w-8 h-8 text-white mx-auto mb-2" />
                       <div className="text-3xl font-bold text-white mb-1">50+</div>
                       <div className="text-sm text-blue-100">Events</div>
                     </div>
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                    <div className="hidden sm:block bg-white/10 backdrop-blur-sm rounded-2xl p-6 px-8 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                       <MessageCircle className="w-8 h-8 text-white mx-auto mb-2" />
                       <div className="text-3xl font-bold text-white mb-1">24/7</div>
                       <div className="text-sm text-blue-100">Support</div>
