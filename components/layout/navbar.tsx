@@ -132,9 +132,11 @@ export default function Navbar() {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2 }}
             ref={navRef}
-            className="absolute top-20 bg-white right-2 px-8 py-6 rounded-lg shadow-lg sm:hidden overflow-hidden"
+            className="absolute top-25 bg-white right-0 px-8 py-6 rounded-lg shadow-lg sm:hidden overflow-hidden"
           >
-            <WhatsappChannel />
+            <div className="bg-primary">
+              <WhatsappChannel />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
