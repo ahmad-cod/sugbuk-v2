@@ -4,7 +4,7 @@ import { sugMail } from '@/lib/constants'
 
 export default function CTA() {
   return (
-    <section className="w-full bg-gradient-to-l from-[#005EB8] to-blue-500 text-white py-12 md:py-20">
+    <section className="w-full bg-gradient-to-l from-blue-500 to-purple-500 text-white py-16 md:py-20">
       <div className="container mx-auto px-4 text-center">
         <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
           Have a Concern or Idea?
@@ -14,7 +14,7 @@ export default function CTA() {
           Share your thoughts with your student representatives.
         </p>
         <Button href={sugMail} variant="secondary" size="lg">
-          Talk to Your Rep
+          Get in touch
         </Button>
     </div>
   </section>
