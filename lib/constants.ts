@@ -29,7 +29,7 @@ export const categories = [
 
 export const sugMail = "mailto:sugbuk2025@gmail.com"
 
-export const whatsappChannel = "https://wa.me/+2347054547240"
+export const whatsappChannel = "https://whatsapp.com/channel/0029Vb6faz41CYoSj0vjgv2u"
 
 export const socialLinks = [
   {
