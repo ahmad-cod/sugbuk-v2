@@ -1,10 +1,9 @@
 // import { Geist } from "next/font/google";
-// import { Toaster } from "react-hot-toast";
-// import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 import { Poppins, Roboto } from "next/font/google";
 import type { Metadata } from "next";
 import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -87,19 +86,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${roboto.variable}`} suppressHydrationWarning>
       <body className="min-h-screen font-body bg-gray-50">
-          {/* I might not want the navbar to display in all pages */}
           <Navbar /> 
           <main className="flex flex-col items-center gap-10 sm:gap-20">
-            {/* <Toaster
-              position="top-center" 
-              toastOptions={{
-                duration: 5000,
-                className: "flex items-center justify-center gap-2 font-inter animate-pulse",
-              }}
-            /> */}
             {children}
             {/* <Analytics /> */}
           </main>
+          <Footer />
       </body>
     </html>
   );
