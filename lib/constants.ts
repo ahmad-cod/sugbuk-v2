@@ -29,6 +29,8 @@ export const categories = [
 
 export const sugMail = "mailto:sugbuk2025@gmail.com"
 
+export const whatsappChannel = "https://wa.me/+2347054547240"
+
 export const socialLinks = [
   {
     name: "Facebook",
