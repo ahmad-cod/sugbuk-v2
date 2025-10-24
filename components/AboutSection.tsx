@@ -8,7 +8,7 @@ export const AboutSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fadeInUp">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              About Us
+              About SUGBUK
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
           </div>
