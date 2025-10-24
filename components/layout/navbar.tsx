@@ -132,7 +132,7 @@ export default function Navbar() {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2 }}
             ref={navRef}
-            className="absolute top-25 bg-white right-0 px-8 py-6 rounded-lg shadow-lg sm:hidden overflow-hidden"
+            className="absolute top-25 bg-white right-4 px-8 py-6 rounded-lg shadow-lg sm:hidden overflow-hidden"
           >
             <div className="bg-primary">
               <WhatsappChannelCTA />

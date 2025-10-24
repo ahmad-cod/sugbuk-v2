@@ -6,10 +6,9 @@ const WhatsappChannelCTA = () => {
   return (
     <button 
       onClick={() => window.open(whatsappChannel, '_blank')}
-      className="group bg-white hover:bg-blue-100 text-blue-600 px-6 sm:px-8 py-6 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 transform hover:cursor-pointer hover:shadow-2xl inline-flex items-center space-x-2 "
+      className="group bg-white hover:bg-blue-100 text-blue-600 px-6 sm:px-8 py-6 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 transform hover:cursor-pointer hover:shadow-2xl inline-flex items-center space-x-3 "
     >
-      {/* <MessageCircle className="hidden w-5 h-5 sm:flex" /> */}
-      <Whatsapp className="w-6 h-6 text-[#25D366] animate-[spin_5s_ease-in-out_infinite]" />
+      <Whatsapp className="w-6 h-6 text-[#25D366] animate-[spin_5s_ease-in-out_infinite] mr-1" />
       <span>Join Our <span className='hidden sm:inline'> WhatsApp </span> Channel</span>
       <ChevronRight className="w-5 h-5 group-hover:translate-x-1 animate-pulse transition-transform" />
     </button>
