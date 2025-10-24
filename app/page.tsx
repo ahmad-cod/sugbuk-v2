@@ -1,6 +1,7 @@
 import { AboutSection } from "@/components/AboutSection";
 import CTA from "@/components/cta";
 import Hero from "@/components/hero";
+import FloatingWhatsappIcon from "@/components/layout/FloatingWhatsappBtn";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <CTA />
+      <FloatingWhatsappIcon />
     </section>
   );
 }
