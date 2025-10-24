@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { WhatsappChannel } from "../WhatsappCTA";
+import WhatsappChannelCTA from "../WhatsappCTA";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +63,7 @@ export default function Navbar() {
 
 
           <div className="hidden sm:flex items-center bg-primary">
-            <WhatsappChannel />
+            <WhatsappChannelCTA />
           </div>
            
           </div>
@@ -135,7 +135,7 @@ export default function Navbar() {
             className="absolute top-25 bg-white right-0 px-8 py-6 rounded-lg shadow-lg sm:hidden overflow-hidden"
           >
             <div className="bg-primary">
-              <WhatsappChannel />
+              <WhatsappChannelCTA />
             </div>
           </motion.div>
         )}
