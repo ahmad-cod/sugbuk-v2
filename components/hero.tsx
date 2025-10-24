@@ -1,8 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { MessageCircle, Users, Calendar } from 'lucide-react';
-// import Image from 'next/image';
-import { WhatsappChannel } from './WhatsappCTA';
+import WhatsappChannelCTA from './WhatsappCTA';
 
 // Prefer static assets or public folder URLs for performance
 const bgUrls = [
@@ -44,7 +43,9 @@ const Hero: React.FC = () => {
                   <p className="text-lg sm:text-xl md:text-2xl text-blue-50 mb-8 max-w-3xl mx-auto leading-relaxed">
                     Your voice, your representation, your union. Stay connected with the latest updates and initiatives from your student government.
                   </p>
-                  <WhatsappChannel />
+                  <div className="animate-[bounce_5s_ease-in-out_infinite]">
+                    <WhatsappChannelCTA />
+                  </div>
                   {/* Stats */}
                   <div className="flex items-center justify-around gap-4 mt-20 max-w-2xl mx-auto">
                     <div className="bg-blue-800/10 backdrop-blur-sm rounded-2xl p-6 px-8 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
