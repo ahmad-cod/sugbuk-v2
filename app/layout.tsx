@@ -1,4 +1,5 @@
 // import { Geist } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 import { Poppins, Roboto } from "next/font/google";
 import type { Metadata } from "next";
@@ -89,7 +90,7 @@ export default function RootLayout({
           <Navbar /> 
           <main className="flex flex-col items-center gap-10 sm:gap-20">
             {children}
-            {/* <Analytics /> */}
+            <Analytics />
           </main>
           <Footer />
       </body>
